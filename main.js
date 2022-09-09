@@ -10,7 +10,9 @@ const showHome = document.querySelector("#show_home");
 const showProducts = document.querySelector("#show_products");
 const navBar = document.querySelector("#navbar");
 const cartBody = document.querySelector("#cart_body");
-const totalCart = document.querySelector(".total_Shopping");    
+const totalCart = document.querySelector(".total_Shopping");
+const iconDarkMode = document.querySelector('.bx-moon');
+const bodyDarkMode = document.querySelector('.dark_mode');    
 
 let html = "";
 let cart = {};
@@ -137,12 +139,10 @@ function printCounterCart() {
 
 }
 
-totalCart.addEventListener('click', (e) => {
-    console.log(e.target);
-});
+
 
 window.addEventListener('scroll', (e) => {
-    if(window.scrollY >= 50) {
+    if(window.scrollY >= 80) {
         navBar.classList.add('nav')
     } else {
         navBar.classList.remove('nav')
@@ -184,3 +184,6 @@ iconMenuClose.addEventListener('click', (e) => {
     contentMenu.classList.toggle("menu_show")
  })
 
+ iconDarkMode.addEventListener('click', (e) => {
+    bodyDarkMode.classList.toggle('dark_mode');
+})

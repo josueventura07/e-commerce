@@ -10,6 +10,7 @@
     --body-color: hsl(206, 4%, 97%);
     --container-color: #fff;
     --border-color: hsl(0, 0%, 94%);
+    --logoImg-color: invert(55%) sepia(96%) saturate(4628%) hue-rotate(328deg) brightness(96%) contrast(90%);
     --body-font: 'Roboto', sans-serif; 
 }
 
@@ -25,6 +26,7 @@ body.dark_mode {
     --container-color: hsl(0, 0%, 15%);
     --card-color: hsla(246, 16%, 5%, .5);
     --button-color-alt: hsl(246, 16%, 12%)
+   
 }
 
 * {
@@ -68,9 +70,6 @@ background-color: var(--body-color);
 
 
 }
-
-
-
 
 
 .navbar {
@@ -133,7 +132,7 @@ background-color: var(--body-color);
     right: -10px;
     top: -9px;
     position: absolute;
-    filter: invert(55%) sepia(96%) saturate(4628%) hue-rotate(328deg) brightness(96%) contrast(90%);    
+    filter: var(--logoImg-color);    
 }
 
 .bx-window-close {
@@ -179,10 +178,11 @@ background-color: var(--body-color);
 
 .item_cart {
   width: 100%;
-  height: 200px;
+ height: 250px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.175);
+  
 }
 
 .item_cart-img {
@@ -201,14 +201,15 @@ background-color: var(--body-color);
 }
 
 .item_cart_details {
-   background-color: var(--container-color); 
+   background-color: var(--body-color); 
    height: 30%;
    width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   gap: 0.5rem;
+   gap: 0.4rem;
+   color: var(--title-color);
    
 }
 
@@ -218,7 +219,7 @@ background-color: var(--body-color);
 }
 
 .total_cart {
-    background-color: blue;
+    background-color: var(--first-color);
     width: 100%;
     height: 10%;
     font-weight: bold;
@@ -235,18 +236,18 @@ background-color: var(--body-color);
     position: relative;
 }
 .counter_cart {
-    background-color: var(--button-color);
+    background-color: var(--title-color);
     position: absolute;
     height: 20px;
     width: 20px;
-    top: 15px;
-    left: -5px;
+    top: -16px;
+    left: 15px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    color: var(--container-color);
+    color: var(--body-color);
 }
 
 .menu_body {
@@ -418,7 +419,7 @@ padding-top: 50px;
     border: none;
     height: 60px;
     width: 150px;
-    color: var(--text-color);
+    color: var(--border-color);
     
 }
 
@@ -488,7 +489,9 @@ padding-top: 50px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.175);
+    
 }
+
 
 .bx-plus-medical{
     background-color: var(--body-color);
@@ -597,13 +600,13 @@ padding-top: 50px;
 
 .about {
     padding-top: 100px;
-    background-color: var(--card-color);
+    background-color: var(--body-color);
     min-width: 450px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border-bottom: solid 0.5px var(--container-color);
+    border-bottom: solid 2px var(--container-color);
 }
 
 
@@ -630,7 +633,7 @@ margin-bottom: 20px;
    
 
 .footer {
-    background-color: var(--card-color);
+    background-color: var(--body-color);
     width: 100%;
     height: 100px;
     display: flex;
@@ -660,18 +663,18 @@ margin-bottom: 20px;
 
     
     .counter_cart {
-        background-color: var(--button-color);
+        background-color: var(--body-color);
         position: absolute;
-        height: 30px;
-        width: 30px;
-        top: 10px;
+        height: 20px;
+        width: 20px;
+        top: -16px;
         left: 18px;
         border-radius: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 20px;
-        color: var(--container-color);
+        color: var(--title-color);
     }
     .menu_body {
         width: 25%;
@@ -728,19 +731,19 @@ margin-bottom: 20px;
         justify-content: center;
         align-items: flex-start;
         gap: 0.5rem;
-        
+        padding-left: 2rem;
      }
 
      .pie_de-pagina {
         
-        background-color: var(--card-color);
+        background-color: var(--body-color);
         width: 100vw;
         
      }
 
      .about {
         padding-top: 150px;
-        background-color: var(--card-color);
+        background-color: var(--body-color);
         width: 1100px;
         height: 400px;
         margin: auto;
