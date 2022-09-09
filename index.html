@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto e commerce</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+
+<body class="">
+
+
+
+
+
+<div class="main_content">
+   
+    <nav class="navbar" id="navbar">
+        
+        <div class="navbar_content-logo">
+            <nav class="nav-icon">
+                <img src="./img/favicon.png" alt="imagen">
+            </nav>
+           
+            <nav class="nav-logo">
+                <a class="font-family" href="#STORE">STORE</a>
+            </nav>
+        </div>
+
+        <div class="menu_body">
+            <ul class="menu" id="menu">
+                <i class='bx bx-exit btn-close' id="icon_menu-close"></i>
+                <li>
+                    <a class="menu_highligter" id="show_home" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="menu_highligter" id="show_products" href="#products">Products</a>
+                </li>
+            </ul>
+        </div> 
+
+        <div class="navbar_icons">
+            <i class='bx bx-moon cursor-pointer' ></i>
+            <i class='bx bx-cart-alt cursor-pointer' id="icon_cart"><div class="counter_cart"></div></i>
+            <i class='bx bx-menu cursor-pointer' id="menu_show"></i>
+        </div>
+            
+    </nav>
+
+    <section class="home" id="home">
+    
+        <div class="img-home">
+            <img src="./img/home.png" alt="img">
+        </div>
+
+        <div class="info-home">
+            <span class="title-home font-family">
+                New Sweatshirt
+                COLLECTIONS 2022
+            </span>
+
+            <span class="info-details font-family">
+                Latest arrival of the new Hanes Midweight 
+                Crewneck sweatshirt imported from the 2022 series, 
+                with a modern design.
+            </span>
+
+            <p>$14.00</p>
+
+            <div class="button-home">
+                <button class="button1 font-family">Discover</button>
+            <button class="button2 font-family">ADD TO CART</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="content_products" id="products">
+        
+        <section class="products">
+        
+            <div class="products-line">
+                <h3 class="font-family font-color_gray">Show All</h3>
+                <span class="font-family font-color_gray">ahow all products</span>
+            </div>
+    
+            <div class="products-line">
+                <h3 class="font-family font-color_gray">Hoddies</h3>
+                <span class="font-family font-color_gray">3 products</span>
+            </div>
+    
+            <div class="products-line">
+                <h3 class="font-family font-color_gray">Shirts</h3>
+                <span class="font-family font-color_gray">4 products</span>
+            </div>
+    
+            <div>
+                <h3 class="font-family font-color_gray">Sweatshirts</h3>
+                <span class="font-family font-color_gray">4 products</span>
+            </div>
+    
+        </section>
+    
+        <section class="items" id="items"></section>
+    
+        
+    </section>
+
+
+    
+    <div class="content_cart" id="content_cart">
+
+        <i class='bx bx-window-close cursor-pointer' id="icon_cart-close"></i>
+
+        <div class="cart_body" id="cart_body">
+
+           
+        
+            
+                      
+        </div class="Total_cart-body">
+
+            <div class="total_cart">Total $: <p class="total_Shopping"></p></div>
+
+        </div>
+    </div>
+
+<div class="pie_de-pagina">
+    <section class="about">
+        <div class="information">
+            <h2 class="space">Our Information</h2>
+            <ul><li>Toluca-Mexico</li></ul>
+        </div>
+        <div class="about-us">
+            <h2 class="space">About Us</h2>
+            <ul>
+                <li>Support Center</li>
+                <li>Customer Support</li>
+                <li>About Us</li>
+                <li>Copy Right</li>
+            </ul>
+        </div>
+        <div class="prod">
+            <h2 class="space">Products</h2>
+            <ul>
+                <li>Hoddies</li>
+                <li>Shirts</li>
+                <li>Sweatshirts</li>
+            </ul>
+        </div>
+        <div class="social">
+            
+            <h2 class="space">Social</h2>
+        
+            <div class="position_svg">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-twitter' ></i>
+            </div>    
+                
+    
+        </div>
+    </section>
+    <section class="footer">© ACADEMLO. All rigths reserved</section>
+    
+</div>
+<script src="./main.js" type="module"></script>
+</body>
+</html>
