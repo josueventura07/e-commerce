@@ -12,7 +12,21 @@ const navBar = document.querySelector("#navbar");
 const cartBody = document.querySelector("#cart_body");
 const totalCart = document.querySelector(".total_Shopping");
 const iconDarkMode = document.querySelector('.bx-moon');
-const bodyDarkMode = document.querySelector('.dark_mode');    
+const bodyDarkMode = document.querySelector('.dark_mode'); 
+const menu = document.querySelectorAll('.menu_highligter')
+
+menu.forEach((element, i) => {
+    menu[i].addEventListener('click', () => {
+        
+        menu.forEach((element, i) => {
+          menu[i].classList.remove('menu_highligter-active')
+          console.log(menu)
+        });
+
+        menu[i].classList.add('menu_highligter-active')
+        console.log(menu)
+    });
+});
 
 let html = "";
 let cart = {};

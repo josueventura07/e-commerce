@@ -294,6 +294,10 @@ background-color: var(--body-color);
     opacity: 0.6;
 }
 
+.menu_highligter-active {
+    color: var(--first-color);
+}
+
 .menu_show {
     transform: translatex(0);  
 }
@@ -466,7 +470,9 @@ padding-top: 50px;
 
 .products-line {
     border-right: solid var(--text-color-light) 1px;
+    cursor: pointer;
 }
+
 
 .products div {
     box-sizing: border-box;
